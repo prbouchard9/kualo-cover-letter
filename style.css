@@ -1,0 +1,127 @@
+:root {
+  /* Coolors.co Generated Colors */
+  --outer-space-crayola: #283d3bff;
+  --skobeloff: #197278ff;
+  --champagne-pink: rgb(255, 251, 248);
+  --international-orange-golden-gate-bridge: #c44536ff;
+  --liver-organ: #772e25ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--champagne-pink);
+  font-family: "Lucida Console", Monaco, monospace;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 1.15rem;
+  line-height: 1.45rem;
+  text-align: justify;
+  color: var(--outer-space-crayola);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--international-orange-golden-gate-bridge);
+}
+
+.container {
+  padding: 80px 17%;
+}
+
+header {
+  background-color: var(--outer-space-crayola);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 2.8rem;
+}
+
+header h2 {
+  font-size: 1.4rem;
+  margin-top: 0.3rem;
+}
+
+ul {
+  list-style-type: none;
+  text-align: end;
+}
+
+li {
+  margin: 8px 0;
+}
+
+.intro {
+  margin-bottom: 2.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro .lead {
+  font-weight: bold;
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+}
+
+.resume-link {
+  color: var(--outer-space-crayola);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.signature {
+  margin-top: 4rem;
+}
+
+.signature h3 {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+
+  .container {
+    padding: 50px;
+  }
+
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  ul {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  p {
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .container {
+    padding: 60px 30px;
+  }
+
+  .intro {
+    flex-direction: column;
+  }
+
+}
